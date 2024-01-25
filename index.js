@@ -1,7 +1,7 @@
 const beer = document.getElementById("beerName");
 const type = document.getElementById("beerType");
 const button =document.getElementById("button");
-const url = 'https://api.punkapi.com/v2/beers';
+const url = 'https://beer-app-cffs.onrender.com/beers';
 let newData = [];
 
 let postNum =0;
@@ -19,7 +19,7 @@ console.log(post)
 console.log(newData)
 
 beer.innerText=post[postNum].name;
-type.innerText=post[postNum].tagline
+type.innerText=post[postNum].type;
 })
 
 };
@@ -28,7 +28,7 @@ function nextBeer(){
     postNum++
     console.log(postNum)
     beer.innerText=newData[postNum].name;
-    type.innerText=newData[postNum].tagline
+    type.innerText=newData[postNum].type;
 }
 
 
