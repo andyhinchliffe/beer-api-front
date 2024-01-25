@@ -36,9 +36,9 @@ alcohol.innerText=post[postNum].alcohol;
 
 function nextBeer(){
     postNum++;
-    // if (postNum>=newData.length){
-    //     postNum=0
-    // }
+    if (postNum>=newData.length){
+        postNum=0
+    }
     console.log(postNum)
     beer.innerText=newData[postNum].name;
     type.innerText=newData[postNum].type;
