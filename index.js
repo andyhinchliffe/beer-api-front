@@ -1,7 +1,7 @@
 const beer = document.getElementById("beerName");
 const type = document.getElementById("beerType");
 const button =document.getElementById("button");
-const url = 'https://api.punkapi.com/v2/beers';
+const url = 'https://cors-anywhere.herokuapp.com/https://beer-app-cffs.onrender.com/beers';
 let newData = [];
 
 let postNum =0;
